@@ -1,7 +1,10 @@
 import project1 from "../assets/project-1.png";
 import project2 from "../assets/project-2.png";
-// import project3 from "../assets/project-3.png";
+import project3 from "../assets/project-3.png";
 import project4 from "../assets/project-4.png";
+import project5 from "../assets/project-5.png";
+import project6 from "../assets/project-6.png";
+import project7 from "../assets/project-7.png";
 
 export const HERO_CONTENT = `I am a software engineer with a strong foundation in both front-end and back-end technologies, recently graduating from a comprehensive course at Moringa School. My expertise includes front-end development with React and Three.js, and back-end technologies such as Node.js and PostgreSQL. I am passionate about leveraging these skills to design and build innovative solutions that not only drive business growth but also deliver exceptional user experiences. My goal is to continuously push the boundaries of technology, creating impactful, user-centric products that stand out in the digital landscape.`;
 
@@ -9,65 +12,67 @@ export const ABOUT_TEXT = `I'm a full-stack developer with a genuine love for cr
 `;
 export const ABOUT_TEXT2 = `My journey into tech began with a simple curiosity about how things work, and it has grown into a fulfilling career where I’m always learning and adapting. I really enjoy collaborating with others and diving into complex challenges to create something truly valuable. Outside of work, I stay active by playing football and drawing, which keep me inspired and balanced.`
 
-export const EXPERIENCES = [
-  {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
-];
 
 export const PROJECTS = [
   {
     title: "Weather App",
     image: project1,
     description:
-      "A fully functional weather app.",
+      "A fully functional weather app with HTML, CSS and Vanilla JavaScript.",
+    link: "https://stormrobert.github.io/WeatherAapp.github.io/",
     technologies: ["HTML", "CSS", "Javascript"],
+    
   },
   {
-    title: "Weather App",
+    title: "React-Weather App",
     image: project2,
     description:
-      "An updated version of weather app.",
+      "An updated version of weather app. The React Weather App is a simple web application that allows users to check the weather for various cities and manage their favorite cities.",
     technologies: ["HTML", "CSS", "React"],
+    link: "https://weather-reactapp-orpin.vercel.app/",
   },
   {
     title: "Portfolio Website",
-    // image: project3,
+    image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "React", "Tailwind", "Framer"],
+      "A personal portfolio website built with React, Tailwind CSS, and Framer Motion, showcasing the apps I've developed and providing insights into my journey as a software engineer. This site highlights my projects, skills, and achievements, offering a dynamic and engaging user experience.",
+    technologies: ["HTML", "React", "Tailwind", "Framer Motion"],
+    link: "https://weather-reactapp-orpin.vercel.app/",
   },
   {
     title: "News App",
     image: project4,
     description:
-      "A platform for getting news updated in realtime.",
+      "StormReports is a dynamic news platform designed to keep you updated in real-time. Leveraging the NewsData API, it fetches and categorizes news articles, delivering the latest updates seamlessly. Built with React, this application offers a streamlined and user-friendly experience for staying informed across various topics.",
     technologies: ["HTML", "CSS", "React"],
+    link: "https://github.com/StormRobert/news-app",
+  },
+  {
+    title: "Kadi_Poker Game",
+    image: project5,
+    description:
+      "We built this group collaboration game web app using React to handle the game logic, while Python took care of storing user data. It was a fun and challenging project that brought our team together, combining creativity and technical skills to create something truly interactive and dynamic.",
+    technologies: [ "TailwindCSS", "React", "Python", "Flask", ],
+    link: "https://github.com/StormRobert/KADI_POKER",
+  },
+  {
+    title: "Sphere3D",
+    image: project6,
+    description:
+      "This project showcases a sleek animation of a sphere, created using the Three.js library. By integrating GSAP, the animation is brought to life with smooth transitions and interactive mouse controls that allow users to change the sphere's color. It's a visually engaging demonstration of 3D graphics and animation techniques.",
+    technologies: [ "Threejs", "Javascript" ],
+    link: "https://threejs-three-phi.vercel.app/",
+  },
+  {
+    title: "Calendly clone",
+    image: project7,
+    description:
+      "As a group, we created a clone of Calendly, a popular scheduling tool, using React and Tailwind for a responsive front-end, and Python with Flask for the back-end. This project allows users to easily book appointments, manage their availability, and send invites, replicating the core functionality of the original platform while providing a smooth and user-friendly experience.",
+    technologies: [ "React", "TailwindCSS", "Python", "Flask", ],
+    links:  [
+        "https://github.com/suleosmann/schedule-nest-calendar-client",
+        "https://github.com/suleosmann/schedule-nest-calendar-server"
+      ],
   },
 ];
 

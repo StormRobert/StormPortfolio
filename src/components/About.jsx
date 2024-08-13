@@ -8,7 +8,7 @@ import { ABOUT_TEXT, ABOUT_TEXT2 } from '../constants/constants'
 
 const About = () => {
   return (
-    <div className='border-b border-neutral-900 pb-4'>
+    <div className='border-b border-neutral-800 pb-24'>
       <h1 className='my-20 mb-1 text-center text-8xl'>About 
         <span className='bg-gradient-to-r from-purple-400 via-slate-400 to-indigo-400 bg-clip-text text-6xl text-transparent'> Me</span>
         </h1>

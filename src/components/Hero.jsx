@@ -13,16 +13,16 @@ const Hero = () => {
         <div className='flex flex-wrap'>
             <div className='w-full lg:w-1/2'>
             <div className='"flex flex-col items-center lg:items-start'>
-                <h1 className='pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl'>Storm Robert</h1>
-                <span className='bg-gradient-to-r from-purple-400 via-slate-400 to-indigo-400 bg-clip-text text-4xl tracking-tight text-transparent'>Software Engineer</span>
-                <p className='my-2 max-w-xl py-6 font-light tracking-tight'>
+                <h1 className='mx-2 pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl'>Storm Robert</h1>
+                <span className='mx-6 bg-gradient-to-r from-purple-400 via-slate-400 to-indigo-400 bg-clip-text text-4xl tracking-tight text-transparent'>Software Engineer</span>
+                <p className='my-2 mx-6 py-6 font-light tracking-tight'>
                     {HERO_CONTENT}
                 </p>
             </div>
             </div>
             <div className='w-full lg:w-1/2 lg:p-8'>
             <div className='flex h-96 justify-center'>
-                <img src={profile} alt="Image" />
+                <img className='rounded-2xl lg:-my-20' src={profile} alt="Image" />
             </div>
             </div>
         </div>

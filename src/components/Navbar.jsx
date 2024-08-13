@@ -9,9 +9,9 @@ const Navbar = () => {
   return (
     <nav className='mb-20 flex items-center justify-between py-6'>
         <div className='flex flex-shrink-0 items-center'>
-            <img className='mx-1 w-60' src={logo} alt="logo" />
+            <img className='mx-6 w-60' src={logo} alt="logo" />
         </div>
-        <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+        <div className="m-12 flex items-center justify-center gap-4 text-2xl">
         <FaLinkedin />
         <FaGithub />
         <FaSquareXTwitter />

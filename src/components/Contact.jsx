@@ -1,6 +1,7 @@
 import React from 'react'
 import { CONTACT } from '../constants/constants'
 import { motion } from 'framer-motion';
+import cv from '../assets/Storm ArasaCV2024.pdf'
 
 const Contact = () => {
     return (
@@ -20,11 +21,26 @@ const Contact = () => {
           </motion.p>
           <a 
             href={`mailto:${CONTACT.email}`} 
-            className='text-lg font-medium border-b border-sky-500 hover:text-sky-600 hover:border-sky-600 transition-colors duration-300'
+            className='text-lg font-medium  '
           >
             Gmail: 
-            <span className='ml-2 text-sky-500'>{CONTACT.email}</span>
+            <span className='ml-2 text-sky-500 hover:text-transparent bg-clip-text hover:bg-gradient-to-r from-purple-400 to-indigo-600 border-b border-sky-500 hover:border-purple-500 transition-colors '>{CONTACT.email}</span>
           </a>
+          <motion.a 
+          initial={{ scale: 0.5, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+          whileHover={{
+            scale: 1.1, 
+            transition: { duration: 0.3 }
+          }}
+          whileTap={{ scale: 0.9 }}
+            href={cv}
+            download 
+            className='mt-4 text-lg font-medium py-3 px-5 rounded-2xl text-white bg-sky-500 transition-colors duration-300 hover:bg-gradient-to-r from-purple-400 to-indigo-600'
+          >
+            Download My CV
+          </motion.a>
         </div>
       </div>
     );

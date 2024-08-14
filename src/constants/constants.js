@@ -5,7 +5,6 @@ import project4 from "../assets/project-4.png";
 import project5 from "../assets/project-5.png";
 import project6 from "../assets/project-6.png";
 import project7 from "../assets/project-7.png";
-import project8 from "../assets/project-8.jpg";
 
 export const HERO_CONTENT = `I am a software engineer with a strong foundation in both front-end and back-end technologies, recently graduating from a comprehensive course at Moringa School. My expertise includes front-end development with React and Three.js, and back-end technologies such as Node.js and PostgreSQL. I am passionate about leveraging these skills to design and build innovative solutions that not only drive business growth but also deliver exceptional user experiences. My goal is to continuously push the boundaries of technology, creating impactful, user-centric products that stand out in the digital landscape.`;
 

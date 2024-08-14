@@ -37,7 +37,7 @@ export const PROJECTS = [
     description:
       "A personal portfolio website built with React, Tailwind CSS, and Framer Motion, showcasing the apps I've developed and providing insights into my journey as a software engineer. This site highlights my projects, skills, and achievements, offering a dynamic and engaging user experience.",
     technologies: ["HTML", "React", "Tailwind", "Framer Motion"],
-    link: "https://weather-reactapp-orpin.vercel.app/",
+    link: "https://stormrobert.vercel.app/",
   },
   {
     title: "News App",

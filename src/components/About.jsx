@@ -2,7 +2,7 @@ import React from 'react'
 import profile2 from '../assets/Openpeeps.png'
 import profile3 from '../assets/profile3.jpg'
 import profile4 from '../assets/profile4.jpg'
-import profile5 from '../assets/profile3.png'
+import profile5 from '../assets/project-8.jpg'
 import profile6 from '../assets/profile4.png'
 import { ABOUT_TEXT, ABOUT_TEXT2 } from '../constants/constants'
 import { motion } from 'framer-motion'
@@ -20,7 +20,7 @@ const About = () => {
          transition={{duration:0.5}}
           className='w-full lg:w-1/2 lg:p-0 lg:-my-4'>
           <div className='flex items-center justify-center'>
-            <img className='rounded-2xl ' src={profile6} alt="aboutimg" />
+            <img className='rounded-2xl lg:w-96 lg:my-24 ' src={profile5} alt="aboutimg" />
             </div>
            </motion.div>
            

@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { PROJECTS } from '../constants/constants'
-import { FaExternalLinkAlt, FaGithub, FaInfoCircle, FaTimes } from 'react-icons/fa'
+import { FaExternalLinkAlt, FaGithub, FaInfoCircle, FaTimes, FaFigma } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const ProjectCard = ({ project }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
+
+  const isDesignProject = project.technologies.includes("Figma");
 
   return (
     <motion.div 
@@ -22,7 +24,7 @@ const ProjectCard = ({ project }) => {
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-2 text-white">{project.title}</h3>
             <a 
-              href={project.link || project.links[0]} 
+              href={project.link} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-block bg-sky-500 hover:bg-sky-600 text-white px-6 py-2 rounded-full font-semibold transition-colors duration-300 mt-4"
@@ -45,7 +47,17 @@ const ProjectCard = ({ project }) => {
         </div>
         <p className="text-neutral-300 text-sm mb-4 line-clamp-3">{project.description}</p>
         <div className="flex justify-between items-center">
-          {project.links ? (
+          {isDesignProject ? (
+            <a 
+              href={project.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-sky-400 hover:text-sky-300 flex items-center text-sm transition-colors duration-300"
+            >
+              <FaFigma className="mr-2" />
+              View Website Outcome
+            </a>
+          ) : project.links ? (
             <div className="flex space-x-4">
               <a 
                 href={project.links[0]} 
@@ -149,7 +161,7 @@ const Projects = () => {
             className="mb-16"
           >
             <h2 className="text-3xl font-semibold mb-8 capitalize text-neutral-200">
-              {category.replace(/([A-Z])/g, ' $1').trim()}
+              {category === "designProjects" ? "Figma Design Projects" : category.replace(/([A-Z])/g, ' $1').trim()}
             </h2>
             {renderProjects(projects)}
           </motion.div>

@@ -7,6 +7,7 @@ import project6 from "../assets/project-6.png";
 import project7 from "../assets/project-7.png";
 import project8 from "../assets/project8.png";
 import project9 from "../assets/project-9.png";
+import figmaProjectImage from "../assets/verbalscripts.png";
 
 export const HERO_CONTENT = `I am a software engineer with a strong foundation in both front-end and back-end technologies, recently graduating from a comprehensive course at Moringa School. My expertise includes front-end development with React and Three.js, and back-end technologies such as Node.js and PostgreSQL. I am passionate about leveraging these skills to design and build innovative solutions that not only drive business growth but also deliver exceptional user experiences. My goal is to continuously push the boundaries of technology, creating impactful, user-centric products that stand out in the digital landscape.`;
 
@@ -99,6 +100,16 @@ export const PROJECTS = {
       link: "https://tuzofund.netlify.app/",
     },
   ],
+  designProjects: [
+    {
+      title: "VerbalScripts",
+      image: figmaProjectImage, 
+      description: "As the UI/UX designer at Verbalscripts, I focus on creating intuitive, user-friendly interfaces that enhance the client experience. My designs streamline access to key services like Dedicated Project Managers, Fast Turnaround Times, and Customized Formatting, ensuring efficient and engaging interactions for our transcription solutions.",
+      technologies: ["Figma", "UI/UX Design", "Prototyping"],
+      link: "https://www.verbalscripts.com/", 
+    }
+  ]
+
 };
 
 export const CONTACT = {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { CONTACT } from '../constants/constants'
 import { motion } from 'framer-motion';
-import cv from '../assets/Storm ArasaCV2024.pdf'
+import cv from '../assets/Storm Robert Cv.pdf'
 
 const Contact = () => {
     return (

@@ -97,7 +97,7 @@ export const PROJECTS = {
       description:
         "Tuzo Fund, currently in development, connects underprivileged students with sponsors, covering educational needs from kindergarten to high school. Sponsors can directly support individual students or contribute to a general fund. With secure transactions and safeguards for sponsor withdrawal, Tuzo Fund ensures continuous financial support, empowering students to pursue their education without barriers.",
       technologies: ["React", "TailwindCSS", "NodeJS", "ExpressJS"],
-      link: "https://tuzofund.netlify.app/",
+      link: "https://www.tuzofund.co.ke/",
     },
   ],
   designProjects: [

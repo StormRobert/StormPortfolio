@@ -7,21 +7,25 @@ import { RiNodejsLine } from "react-icons/ri";
 import { SiFlask } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { PiFigmaLogoFill } from "react-icons/pi";
+import { SiExpress } from "react-icons/si"
+import { SiJenkins } from "react-icons/si"
 import { motion } from 'framer-motion'
 
 const iconVariants = (duration) => ({
-    initial: {y:-10},
-    animate:{
-        y:[10, -10],
-        transition:{
+    initial: { y: -10, scale: 1, opacity: 0.8 },
+    animate: {
+        y: [10, -10],
+        scale: [1, 1.2, 1],
+        opacity: [0.8, 1, 0.8],
+        transition: {
             duration: duration,
-            ease: "linear",
+            ease: "easeInOut",
             repeat: Infinity,
             repeatType: "reverse",
+            times: [0, 0.5, 1]
         }
     }
 })
-
 
 const Tech = () => {
   return (
@@ -91,6 +95,20 @@ const Tech = () => {
             animate='animate' 
             className='bg-neutral-600 rounded-2xl border-4 p4'>
                 <BiLogoPostgresql className='text-7xl text-sky-700'/>
+            </motion.div>
+            <motion.div
+            variants={iconVariants(7.5)}
+            initial='initial'
+            animate='animate' 
+            className='bg-neutral-600 rounded-2xl border-4 p4'>
+                <SiExpress className='text-7xl text-white'/>
+            </motion.div>
+            <motion.div
+            variants={iconVariants(8.5)}
+            initial='initial'
+            animate='animate' 
+            className='bg-neutral-600 rounded-2xl border-4 p4'>
+                <SiJenkins className='text-7xl text-red-500'/>
             </motion.div>
         </motion.div>
       
